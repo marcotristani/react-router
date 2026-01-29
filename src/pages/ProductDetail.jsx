@@ -22,7 +22,7 @@ function ProductDetail() {
       });
   }
 
-  useEffect(fetchProductSingle, []);
+  useEffect(fetchProductSingle, [id]);
   console.log(singleProduct);
 
   return (
