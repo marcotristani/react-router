@@ -1,5 +1,5 @@
 function ProductCard({ product }) {
-  const { id, title, price, description, category, image } = product;
+  const { title, price, category, image } = product;
   return (
     <div className="product-card">
       <h6 className="title-product">{title}</h6>
