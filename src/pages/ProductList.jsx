@@ -8,11 +8,13 @@ const endpoint = "https://fakestoreapi.com/products";
 function ProductList() {
   const [productsList, setProductsList] = useState([]);
 
-  function fetchProductsList() {
-    axios.get(endpoint).then((response) => setProductsList(response.data));
-  }
+  // function fetchProductsList() {
+  //   axios.get(endpoint).then((response) => setProductsList(response.data));
+  // }
 
-  useEffect(fetchProductsList, []);
+  useEffect(() => {
+    axios.get(endpoint).then((response) => setProductsList(response.data));
+  }, []);
 
   return (
     <section className="products-container">
