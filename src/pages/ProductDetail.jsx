@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import ProductDetailCard from "../components/ProductDetailCard";
 
-const endpoint = "https://fakestoreapi.com/products/";
+const endpoint = "https://fakestoreapi.com/products";
 
 function ProductDetail() {
   const { id } = useParams();
@@ -29,7 +29,7 @@ function ProductDetail() {
       {singleProduct ? (
         <ProductDetailCard singleProduct={singleProduct} />
       ) : (
-        <p>errore</p>
+        navigate("/error")
       )}
     </section>
   );
