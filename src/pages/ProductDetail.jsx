@@ -2,8 +2,9 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import ProductDetailCard from "../components/ProductDetailCard";
+import { SpinningCircles } from "react-loading-icons";
 
-const endpoint = "https://fakestoreapi.com/products";
+const endpoint = "https://fakestoreapi.com/products/";
 
 function ProductDetail() {
   const { id } = useParams();
@@ -29,7 +30,7 @@ function ProductDetail() {
       {singleProduct ? (
         <ProductDetailCard singleProduct={singleProduct} />
       ) : (
-        navigate("/error")
+        <SpinningCircles />
       )}
     </section>
   );

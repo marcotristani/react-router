@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 function ProductDetailCard({ singleProduct }) {
   const { title, price, category, image, description } = singleProduct;
   return (

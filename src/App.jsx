@@ -12,7 +12,6 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/error" element={<ErrorPage />} />
         <Route element={<MainLayout />}>
           <Route index element={<Homepage />} />
           <Route path="/about_us" element={<AboutUs />} />
@@ -21,6 +20,7 @@ function App() {
             <Route index element={<ProductList />} />
             <Route path=":id" element={<ProductDetail />} />
           </Route>
+          <Route path="*" element={<ErrorPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -1,9 +1,9 @@
 function ErrorPage({ error }) {
   return (
-    <div>
+    <section className="error-section">
       <h1>Errore</h1>
       <h2>Qualcosa è andato storto</h2>
-    </div>
+    </section>
   );
 }
 
