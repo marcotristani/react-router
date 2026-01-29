@@ -13,9 +13,9 @@ function App() {
       <Routes>
         <Route element={<MainLayout />}>
           <Route index element={<Homepage />} />
-          <Route path="/AboutUs" element={<AboutUs />} />
+          <Route path="/about_us" element={<AboutUs />} />
 
-          <Route path="/ProductList">
+          <Route path="/product_list">
             <Route index element={<ProductList />} />
             <Route path=":id" element={<ProductDetail />} />
           </Route>
