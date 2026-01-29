@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 function NavBar() {
   const links = [
     { path: "/about_us", label: "Chi siamo" },
-    { path: "/product_list", label: "Lista Prodotti" },
+    { path: "/products_list", label: "Lista Prodotti" },
   ];
   return (
     <nav>
